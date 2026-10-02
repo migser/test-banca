@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acceso clientes | Veltria Bank (demo)</title>
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="demo-banner">Sitio de demostración — Veltria Bank es una marca ficticia. Todos los datos son de prueba.</div>
+<header><div class="container nav">
+  <a class="logo" href="../index.html"><img src="../images/logo.svg" alt="Veltria Bank"></a>
+  <ul><li><a href="cuentas.html">Cuentas</a></li><li><a href="tarjetas.html">Tarjetas</a></li><li><a href="hipotecas.html">Hipotecas</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+  <div class="nav-actions">
+    <a class="btn btn-outline" href="contacto.html">Hazte cliente</a>
+    <a class="btn btn-primary" href="login.html">Área clientes</a>
+    <button class="menu-toggle" aria-label="Menú">☰</button>
+  </div>
+</div></header>
+
+<div class="login-wrap"><form class="login-box" data-demo="login">
+  <h1>Área de clientes</h1><p style="color:var(--muted)">Accede a tu banca online</p>
+  <div class="note">Entorno de demostración: no introduzcas datos reales. Pulsa “Entrar” para ver el área de clientes con datos ficticios.</div>
+  <div class="form-row"><label for="u">Usuario</label><input id="u" value="cliente.demo" autocomplete="off"></div>
+  <div class="form-row"><label for="pw">Clave</label><input id="pw" type="password" placeholder="(no requerida en la demo)" autocomplete="off"></div>
+  <button class="btn btn-primary" style="width:100%" type="submit">Entrar</button>
+</form></div>
+
+<footer class="site"><div class="container">
+  <div class="grid grid-4">
+    <div><img src="../images/logo-white.svg" alt="Veltria Bank" style="height:38px;margin-bottom:12px"><p>Banca sencilla, transparente y digital. Entidad ficticia con fines de demostración.</p></div>
+    <div><h4>Productos</h4><ul><li><a href="cuentas.html">Cuentas</a></li><li><a href="tarjetas.html">Tarjetas</a></li><li><a href="hipotecas.html">Hipotecas</a></li></ul></div>
+    <div><h4>Ayuda</h4><ul><li><a href="contacto.html">Contacto</a></li><li><a href="contacto.html#faq">Preguntas frecuentes</a></li><li><a href="login.html">Área clientes</a></li></ul></div>
+    <div><h4>Contacto</h4><ul><li>900 000 000 (demo)</li><li>hola@veltria.example</li><li>L-V 8:00-22:00</li></ul></div>
+  </div>
+  <div class="bottom"><span>© <span class="year"></span> Veltria Bank (ficticio). Solo demostración.</span><span>Aviso legal · Privacidad · Cookies</span></div>
+</div></footer>
+<div class="cookie"><div class="container"><span>Usamos cookies técnicas para esta demo. Puedes aceptar o rechazar las no esenciales.</span>
+<div style="display:flex;gap:8px"><button class="btn btn-outline" data-msg="Cookies no esenciales rechazadas">Rechazar</button><button class="btn btn-primary" data-msg="Preferencias guardadas">Aceptar</button></div></div></div>
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

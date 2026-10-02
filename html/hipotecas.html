@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hipotecas | Veltria Bank (demo)</title>
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="demo-banner">Sitio de demostración — Veltria Bank es una marca ficticia. Todos los datos son de prueba.</div>
+<header><div class="container nav">
+  <a class="logo" href="../index.html"><img src="../images/logo.svg" alt="Veltria Bank"></a>
+  <ul><li><a href="cuentas.html">Cuentas</a></li><li><a href="tarjetas.html">Tarjetas</a></li><li><a href="hipotecas.html" class="active">Hipotecas</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+  <div class="nav-actions">
+    <a class="btn btn-outline" href="contacto.html">Hazte cliente</a>
+    <a class="btn btn-primary" href="login.html">Área clientes</a>
+    <button class="menu-toggle" aria-label="Menú">☰</button>
+  </div>
+</div></header>
+
+<section class="page-hero"><div class="container"><h1>Hipotecas</h1><p>Simula tu cuota y recibe una propuesta personalizada en 24h.</p></div></section>
+<section><div class="container grid grid-2">
+  <div class="calc" data-calc>
+    <h2 style="color:var(--navy);margin-bottom:18px">Simulador de cuota</h2>
+    <div class="form-row"><label for="importe">Importe: <span id="lbl-importe"></span></label><input type="range" id="importe" min="30000" max="600000" step="5000" value="180000"></div>
+    <div class="form-row"><label for="plazo">Plazo: <span id="lbl-plazo"></span></label><input type="range" id="plazo" min="5" max="35" value="25"></div>
+    <div class="form-row"><label for="tin">Tipo de interés (TIN %)</label><select id="tin"><option value="2.45">Fija · 2,45%</option><option value="2.10">Mixta · 2,10% (estimado)</option><option value="3.05">Variable · Euríbor+0,65 (≈3,05%)</option></select></div>
+    <div class="result">Cuota mensual estimada<br><strong id="cuota">—</strong><br><small>Simulación orientativa con datos ficticios</small></div>
+  </div>
+  <div>
+    <div class="card" style="margin-bottom:20px"><h3>Hipoteca Fija</h3><p>La misma cuota durante toda la vida del préstamo.</p></div>
+    <div class="card" style="margin-bottom:20px"><h3>Hipoteca Mixta</h3><p>Tipo fijo los primeros 10 años y variable después.</p></div>
+    <div class="card"><h3>Hipoteca Variable</h3><p>Referenciada a Euríbor con diferencial bonificable.</p></div>
+  </div>
+</div></section>
+
+<footer class="site"><div class="container">
+  <div class="grid grid-4">
+    <div><img src="../images/logo-white.svg" alt="Veltria Bank" style="height:38px;margin-bottom:12px"><p>Banca sencilla, transparente y digital. Entidad ficticia con fines de demostración.</p></div>
+    <div><h4>Productos</h4><ul><li><a href="cuentas.html">Cuentas</a></li><li><a href="tarjetas.html">Tarjetas</a></li><li><a href="hipotecas.html">Hipotecas</a></li></ul></div>
+    <div><h4>Ayuda</h4><ul><li><a href="contacto.html">Contacto</a></li><li><a href="contacto.html#faq">Preguntas frecuentes</a></li><li><a href="login.html">Área clientes</a></li></ul></div>
+    <div><h4>Contacto</h4><ul><li>900 000 000 (demo)</li><li>hola@veltria.example</li><li>L-V 8:00-22:00</li></ul></div>
+  </div>
+  <div class="bottom"><span>© <span class="year"></span> Veltria Bank (ficticio). Solo demostración.</span><span>Aviso legal · Privacidad · Cookies</span></div>
+</div></footer>
+<div class="cookie"><div class="container"><span>Usamos cookies técnicas para esta demo. Puedes aceptar o rechazar las no esenciales.</span>
+<div style="display:flex;gap:8px"><button class="btn btn-outline" data-msg="Cookies no esenciales rechazadas">Rechazar</button><button class="btn btn-primary" data-msg="Preferencias guardadas">Aceptar</button></div></div></div>
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Veltria Bank (demo)</title>
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="demo-banner">Sitio de demostración — Veltria Bank es una marca ficticia. Todos los datos son de prueba.</div>
+<header><div class="container nav">
+  <a class="logo" href="../index.html"><img src="../images/logo.svg" alt="Veltria Bank"></a>
+  <ul><li><a href="cuentas.html">Cuentas</a></li><li><a href="tarjetas.html">Tarjetas</a></li><li><a href="hipotecas.html">Hipotecas</a></li><li><a href="contacto.html" class="active">Contacto</a></li></ul>
+  <div class="nav-actions">
+    <a class="btn btn-outline" href="contacto.html">Hazte cliente</a>
+    <a class="btn btn-primary" href="login.html">Área clientes</a>
+    <button class="menu-toggle" aria-label="Menú">☰</button>
+  </div>
+</div></header>
+
+<section class="page-hero"><div class="container"><h1>Contacto</h1><p>Escríbenos y un gestor te contactará (formulario de demostración).</p></div></section>
+<section><div class="container grid grid-2">
+  <form class="calc" data-demo="contacto">
+    <div class="form-row"><label for="n">Nombre</label><input id="n" placeholder="Nombre Apellido" required></div>
+    <div class="form-row"><label for="e">Email</label><input id="e" type="email" placeholder="usuario@example.com" required></div>
+    <div class="form-row"><label for="p">Producto de interés</label><select id="p"><option>Cuenta Nómina</option><option>Cuenta Ahorro Meta</option><option>Tarjeta Crédito Aurora</option><option>Hipoteca</option></select></div>
+    <div class="form-row"><label for="m">Mensaje</label><textarea id="m" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea></div>
+    <button class="btn btn-primary" type="submit">Enviar</button>
+    <div class="note">Este formulario no envía datos a ningún servidor.</div>
+  </form>
+  <div><h2 style="color:var(--navy);margin-bottom:16px">Oficinas</h2><div id="oficinas" class="grid"></div></div>
+</div></section>
+<section id="faq" style="padding-top:0"><div class="container faq">
+  <div class="section-title"><h2>Preguntas frecuentes</h2></div>
+  <details><summary>¿Cuánto tarda en abrirse una cuenta?</summary><p>Unos 5 minutos desde la app con verificación por vídeo (proceso ficticio).</p></details>
+  <details><summary>¿Cómo bloqueo mi tarjeta?</summary><p>Desde la app: Tarjetas → Bloquear. El bloqueo es inmediato y reversible.</p></details>
+  <details><summary>¿Tiene comisiones la Cuenta Nómina?</summary><p>No, 0 € de mantenimiento y transferencias SEPA gratuitas.</p></details>
+</div></section>
+
+<footer class="site"><div class="container">
+  <div class="grid grid-4">
+    <div><img src="../images/logo-white.svg" alt="Veltria Bank" style="height:38px;margin-bottom:12px"><p>Banca sencilla, transparente y digital. Entidad ficticia con fines de demostración.</p></div>
+    <div><h4>Productos</h4><ul><li><a href="cuentas.html">Cuentas</a></li><li><a href="tarjetas.html">Tarjetas</a></li><li><a href="hipotecas.html">Hipotecas</a></li></ul></div>
+    <div><h4>Ayuda</h4><ul><li><a href="contacto.html">Contacto</a></li><li><a href="contacto.html#faq">Preguntas frecuentes</a></li><li><a href="login.html">Área clientes</a></li></ul></div>
+    <div><h4>Contacto</h4><ul><li>900 000 000 (demo)</li><li>hola@veltria.example</li><li>L-V 8:00-22:00</li></ul></div>
+  </div>
+  <div class="bottom"><span>© <span class="year"></span> Veltria Bank (ficticio). Solo demostración.</span><span>Aviso legal · Privacidad · Cookies</span></div>
+</div></footer>
+<div class="cookie"><div class="container"><span>Usamos cookies técnicas para esta demo. Puedes aceptar o rechazar las no esenciales.</span>
+<div style="display:flex;gap:8px"><button class="btn btn-outline" data-msg="Cookies no esenciales rechazadas">Rechazar</button><button class="btn btn-primary" data-msg="Preferencias guardadas">Aceptar</button></div></div></div>
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
